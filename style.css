@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0  ;
+    padding: 0px;
+    
+    
+    
+}
+
+:root{
+  --orangecolor: hsl(31, 77%, 52%);
+  --darkcolor: hsl(184, 100%, 22%);
+  --Verydark: hsl(179, 100%, 13%);
+}
+body{
+background-color: hsl(0, 0%, 95%);
+}
+
+
+
+
+section{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px 0px 100px 0px;
+  justify-content: center;
+  
+}
+
+section .card:nth-child(1){
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: var(--orangecolor);
+  
+}
+section .card:nth-child(2){
+  background-color: var(--darkcolor);
+  
+}
+section .card:nth-child(3){
+  background-color: var(--Verydark);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.card{
+    width: 320px;
+    height: 475px;
+    color: white;
+    
+}
+
+.toptoo img{
+  margin-bottom: 25px;
+  
+}
+.topthree img{
+  margin-bottom: 25px;
+}
+.top img{
+  margin-bottom: 25px;
+}
+.top{
+  max-width: 195px;
+  margin-left: 50px;
+  margin-top: 50px;
+  
+}
+.toptoo {
+  max-width: 210px;
+  margin-left: 50px;
+  margin-top: 50px;
+  
+}
+.topthree{
+  max-width: 210px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.topthree button{
+  color: var(--Verydark);
+}
+.toptoo button{
+  color: var(--darkcolor);
+}
+
+button{
+  margin-top: 75px;
+  padding: 13px 30px 13px 30px;
+  border-radius: 40px;
+  color: var(--orangecolor);
+  border: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  
+}
+
+
+
+p{
+  font-family: "Lexend Deca", sans-serif;
+  color: hsl(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  line-height: 25px;
+  
+}
+h1{
+  
+  font-size: 39px;
+  margin-bottom: 25px;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  
+  
+}
+
+.top:nth-of-type(3){
+  width: 200px;
+}
+
+@media (max-width:932px){
+  section .card:nth-child(1){
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+  }
+  section .card:nth-child(2){
+    border-radius: 0px;
+    
+  }
+  section .card:nth-child(3){
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+}
